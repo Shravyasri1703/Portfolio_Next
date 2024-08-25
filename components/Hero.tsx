@@ -3,6 +3,7 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
+import { Button } from './ui/MovingBorders'
 
 const Hero = () => {
   return (
@@ -24,9 +25,23 @@ const Hero = () => {
                 Dynamic Web Magic With Next.JS
               </h2>
               <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-6xl' words='Transforming Concepts into Seamless User Experiences' />
-              <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl mt-2'>Hi, I&apos;m Shravyasri, a <span className='text-purple font-bold'>Full Stack Developer</span> based in <span className='text-orange-400 font-bold'>IN</span><span className='font-bold'>D</span><span className='text-green-500 font-bold'>IA</span></p>
+              <p className='text-center md:tracking-wider mb-10 text-sm md:text-lg lg:text-2xl mt-2'>Hi, I&apos;m Shravyasri, a <span className='text-purple font-bold'>Full Stack Developer</span> based in <span className='text-orange-400 font-bold'>IN</span><span className='font-bold'>D</span><span className='text-green-500 font-bold'>IA</span></p>
               <a href='/about'>
-                <MagicButton title='Scroll Down' icon={<FaLocationArrow />} position='right' />
+              <Button
+            
+             borderRadius='1.75rem'
+             className='flex-1 text-white border-neutral-200 dark:border-slate-800 '
+            >
+                <div className='flex lg:flex-row flex-col p-3 py-6 md:p-5 lg:p-10 gap-2'>
+                  
+                   <div className='lg:ms-5'>
+                    <h1 className='text-start text-xl md:text-2xl font-bold'>
+                      Scroll down to explore my background.
+                    </h1>
+                   
+                   </div>
+                </div>
+            </Button>
               </a>
             </div>
 
